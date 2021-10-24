@@ -58,6 +58,18 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
                 getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,
                         new ProfileFragment()).commit();
                 break;
+            case R.id.nav_image:
+                getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,
+                        new ImageFragment()).commit();
+                break;
+            case R.id.nav_setting:
+                getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,
+                        new SettingFragment()).commit();
+                break;
+            case R.id.nav_appweb:
+                getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,
+                        new AppWebFragment()).commit();
+                break;
         }
         drawer.closeDrawer(GravityCompat.START);
         return true;
